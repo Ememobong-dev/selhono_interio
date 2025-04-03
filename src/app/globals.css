@@ -4,10 +4,26 @@
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif-display: var(--font-dm-serif-display);
+  --font-inter: var(--font-inter);
+
+  --color-light-brown: #CDA274
 }
 
 body {
   background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: sans-serif; */
+}
+
+.home_headerBg{
+  background: url('../../public/images/home-header.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+  
 }

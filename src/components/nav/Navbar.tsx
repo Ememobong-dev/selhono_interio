@@ -1,16 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import brand_logo from "/images/brand_logo.png";
+import brand_logo from "@/public/images/brand_logo.png";
+import searchIcon from "@/public/icons/searchIcon.svg";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="flex justify-center items-center w-full">
-      <div className="p-7 flex justify-between items-center">
+    <div className="flex justify-center items-center w-full fixed top-0">
+      <div className="py-7 flex justify-between items-center w-[70%] ">
         <span>
           <Image src={brand_logo} alt="brand_logo" />
         </span>
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-8 items-center">
           <Link href={"/"}>
             <p>Home</p>
           </Link>
@@ -30,7 +31,7 @@ export const Navbar = () => {
             <p>Contact</p>
           </Link>
           <span>
-          Home
+          <Image src={searchIcon} className="w-5 h-5" alt="search_icon" />
           </span>
         </div>
       </div>
